@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTTP Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Add yourself to the User List</h1>
+    </div>
+    <div class="input-section">
+      <form action="" method="POST">
+        <div class="form-data">
+          <label for="name"> Enter name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            required
+            placeholder="John"
+          />
+          <input type="button" value="Submit" id="this-one" class="button">
+        </div>
+      </form>
+    </div>
+    <div class="user-list-section">
+      <h2>List of users</h2>
+      <ul class="user-list" slot="user-list"></ul>
+    </div>
+  </body>
+</html>
