@@ -10,19 +10,18 @@ fetch("https://reqres.in/api/users")
       newLI.innerHTML = `Name: ${firstName}`;
       userList.appendChild(newLI);
     });
-  });   
+  });
 
 document.addEventListener("DOMContentLoaded", function () {
   function getUserInput() {
     let userInput = document.getElementById("name").value.trim();
-    if(!userInput){
-        alert('please enter something valid!');
-        location.reload();
+    if (!userInput) {
+      alert("please enter something valid!");
+      location.reload();
     } else {
-        console.log(userInput);
-        return userInput;
+      console.log(userInput);
+      return userInput;
     }
-
   }
 
   const button = document.getElementById("this-one");
